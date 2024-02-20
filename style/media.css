@@ -1,0 +1,168 @@
+/* Media 1440
+=================*/
+@media screen and (max-width: 1440px) {
+    .logo {
+        margin: 0 0 0 4%;
+    }
+
+    .nav {
+        margin: 0 0 0 4%
+    }
+
+}
+
+
+
+/* Media 1270
+=================*/
+
+@media screen and (max-width: 1270px){
+
+    .header-inner {
+        height: 106px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 19px;
+        left: 50px;
+        margin-left: 0;
+    }
+
+    .nav {
+        margin: 0;
+        width: 100%;
+        min-width: 700px;
+        position: absolute;
+        justify-content: center;
+        top: 50px;
+        border-bottom: 1px solid #DDD;
+        border-top: 1px solid #DDD;
+    }
+
+
+    .form-container {
+        margin: 0;
+        position: absolute;
+        top: 17px;
+        right: 90px;
+    }
+
+    .menu {
+        margin: 0;
+        grid-gap: 0;
+    }
+
+    .menu li {
+        margin: 15px 41px;
+    }
+
+
+    #search:checked~.modal-container {
+        left: -130px;
+    }
+
+    #search:checked~#btn-search {
+        position: absolute;
+        left: -160px;
+    }
+
+}
+
+
+/* Media 690
+=================*/
+
+@media screen and (max-width: 680px) {
+
+    .nav {
+     min-width: 482px;
+    }
+
+    .menu li {
+        margin: 15px 15px;
+    }
+
+    .logo {
+        left: 20px;
+    }
+
+}
+
+/* Media 510
+=================*/
+
+@media screen and (max-width: 510px) {
+
+    .menu li {
+        display: none;
+    }
+
+    .menu label.toggleMenu {
+        background-image: url(../img/List.png);
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        position:absolute;
+        left: 8px;
+        top: 12px;
+    }
+
+     input.toggleMenu:checked ~ li{
+         display: block;
+         margin: 55px 10px 50px 14px;
+         width: auto;
+         background: #EBEBEB;
+         font-size: 18px;
+    }
+
+    input.toggleMenu:checked ~ label.toggleMenu {
+        background-image: url(../img/Frame%207.svg);
+
+    }
+    .menu {
+        display: block;
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+        background: #EBEBEB;
+    }
+
+    .nav {
+        min-width: 0;
+        border-bottom: none;
+    }
+
+    .form-container {
+        top: 62px;
+    }
+
+    .logo {
+        left: 140px;
+    }
+
+    .log_in {
+        background-color: transparent;
+    }
+
+      #text-search {
+        width: 216px;
+    }
+}
+
+
+/* Media 380
+=================*/
+
+@media screen and (max-width: 380px){
+
+
+    #text-search {
+        width: 216px;
+    }
+    .logo {
+        left: 110px;
+    }
+}
