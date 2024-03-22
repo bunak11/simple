@@ -26,10 +26,10 @@ p {
     margin: 0 auto;
    }
 
-page {
+.page {
    width: 100%;
    height: 100vh;
-   min-height: 770px;
+   max-width: 1440px;
    position: relative;
 
 
@@ -38,7 +38,7 @@ page {
 
 
 .menu [type="checkbox"] {
-    display: none;
+    display: none
 }
 
 /* Header
@@ -54,6 +54,7 @@ header {
 }
 .header-inner {
     display: flex;
+    width: 100%;
     align-items: center;
     position: relative;
     border-bottom: 1px solid #DDD;
@@ -67,10 +68,11 @@ header {
     align-items: center;
     box-sizing: border-box;
 
-    width: 140px;
+    width: auto;
     height: 22px;
     grid-gap: 5px;
-    margin-left: 165px;
+    margin-right: auto;
+    transform: translateX(85px);
 }
 
 .logo-text {
@@ -94,9 +96,13 @@ header {
 
 }
 
+.header-border{
+    display: none;
+}
+
 .nav {
     display: flex;
-    margin-left: 176px;
+    margin-right: 60px;
 
 }
 
@@ -110,7 +116,8 @@ header {
    font-style: normal;
    font-weight: 400;
    line-height: normal;
-    text-decoration: none;
+   text-decoration: none;
+   white-space:nowrap;
 }
 
 .menu li, a:hover {
@@ -132,137 +139,103 @@ header {
    }
 
 
-
-
-form {
-    display: block;
-    box-sizing: border-box;
-    background: transparent;
-    padding: 2px;
-    position: relative;
-    margin-left: 60px;
+.form-container {
+    display: flex;
 }
 
-#btn-search {
-    display: block;
-    cursor: pointer;
-    background-image: url(../img/search/search.png);
-    background-repeat: no-repeat;
+.warp-search [type="checkbox"] {
+    display: none;
+}
 
+.warp-search {
+    display: flex;
+}
+
+#search-icon {
+    display: block;
     width: 24px;
     height: 24px;
+    background-image: url(../img/search/search.png);
+    cursor: pointer;
+    margin-right: 26px;
 }
 
-#btn-search:hover {
-    background-image: url(../img/search/search=hover.png);
+.field-search {
+    width: 0;
+    position: relative;
+    overflow: hidden;
 }
 
-#btn-search:active {
-    background-image: url(../img/search/search=active.png);
-}
-
-.modal-container {
-    position: absolute;
-    box-sizing: border-box;
-    left: 40px;
-    top: 0;
-
-    width: 215px;
-    height: 26px;
-}
-
-.modal {
-    position: absolute;
-    box-sizing: border-box;
-    width: 215px;
-    height: 26px;
-
-    background: transparent;
-    border-bottom: 1px solid #D1D1E5;
-}
-
-.modal input {
-
-   font-family: Roboto;
-   font-size: 20px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: normal;
-}
-
-.modal input::-webkit-input-placeholder {color:    color: #D1D1E5}
-
-.modal input:focus::-webkit-input-placeholder {color: transparent}
-
-.modal input:focus::-webkit-input-border {color: transparent}
-
-.modal input:active, :hover, :focus {
+.field-search input:active, :hover, :focus {
     outline: 0;
     outline-offset: 0;
 }
 
-.modal label {
+#input {
+    width: 224px;
+    padding-right: 20px;
+    border: 0;
+    border-bottom: solid 1px #D1D1E5;
+    color: #4C5866;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family:'Roboto','Ubuntu',sans-serif;
+}
+
+#input::-webkit-input-placeholder {
+    font-family:'Roboto','Ubuntu',sans-serif;
+    color: #D1D1E5;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.btn-input {
+    position: absolute;
     width: 16px;
     height: 16px;
-    position: absolute;
-    right: 10px;
-    top: 3px;
+    background-image:url(../img/search/escape.png);
+    background-color: transparent;
+    right: 3px;
+    top: 4px;
     cursor: pointer;
-    background-image: url(../img/search/escape.png);
-    background-repeat: no-repeat;
-
+    border: 0;
 }
 
-.modal label:hover {
-    background-image: url(../img/search/escape=hover.png);
+#btn-search:checked~.field-search{
+    width: 224px;
+    transition-duration: 0.5s;
+    transform: translateX(-10px);
 }
 
-.modal label:active {
-    background-image: url(../img/search/escape=active.png);
-}
-
-#text-search {
-
-    border: none;
-    position: absolute;
-    bottom: 0;
-    width: 265px;
-}
-
-
-#search,
-.modal-container {
-    display: none;
-}
-
-#search:checked~.modal-container {
-   display: flex;
-}
-
-.log_in {
+.btn-log_in {
+    display: block;
+    margin-right: 165px;
     width: 24px;
     height: 24px;
-    background: #fff;
-    background-image: url(../img/log-in/log-in.svg);
     border: 0;
-    padding: 0;
+    background-image: url(../img/log-in/log-in.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
     cursor: pointer;
-    position: absolute;
-    left: 75px;
-    top: 3px;
 }
 
-.log_in:hover {
+.btn-log_in:hover {
     background-image: url(../img/log-in/log-in=hover.png);
 }
 
-.log_in:active {
+.btn-log_in:active {
     background-image: url(../img/log-in/log-in=active.png);
 }
 
-#search:checked~.log_in {
-    display: none;
-}
+
 
 /* Catalog
 ================================ */
@@ -553,7 +526,7 @@ form {
     width: 100%;
     height: 100%;
     top: 51px;
-    left: 63px;
+    left: 72px;
     background-image: url(../img/YOUR%20DESIGN%20HERE.png);
     background-repeat: no-repeat;
     position: absolute;
@@ -645,8 +618,8 @@ form {
     display: block;
     width: 100%;
     height: 100%;
-    top: 0px;
-    left: 0px;
+    top: 12px;
+    left: 14px;
     background-image: url(../img/Paper%20Bag%20v9.png);
     background-repeat: no-repeat;
     position: absolute;
@@ -657,8 +630,8 @@ form {
     display: block;
     width: 100%;
     height: 100%;
-    top: 0px;
-    left: 0px;
+    top: 11px;
+    left: 15px;
     background-image: url(../img/Briefcase%20v1%201.png);
     background-repeat: no-repeat;
     position: absolute;
@@ -669,7 +642,7 @@ form {
     display: block;
     width: 100%;
     height: 100%;
-    top: 0px;
+    top: 20px;
     left: 0px;
     background-image: url(../img/Folder%20with%20Rubber%20Band%20v2%201.png);
     background-repeat: no-repeat;
@@ -681,8 +654,8 @@ form {
     display: block;
     width: 100%;
     height: 100%;
-    top: 0px;
-    left: 0px;
+    top: 4px;
+    left: 95px;
     background-image: url(../img/Box%20v7%201.png);
     background-repeat: no-repeat;
     position: absolute;
@@ -925,7 +898,13 @@ form {
 .logo-ellipse-wh {
     margin-top: 5px;
 }
-
+.footer-border {
+    display: none;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    opacity: 0.2;
+}
 .icon-group {
     display: flex;
     width: 186px;
