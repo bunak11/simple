@@ -248,8 +248,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .catalog-content {
-    margin-left: 165px;
-    margin-top: 130px;
+    margin: 130px auto 0;
 }
 
 .catalog-title {
@@ -311,7 +310,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .catalog-img {
-    margin-left: 125px;
+    margin: 0 auto 0;
     width: 540px;
     height: auto;
     background-image: url(../img/Layer%202%20copy.png);
@@ -326,26 +325,30 @@ input[type="search"]::-webkit-search-results-decoration {
 
 
 .main-inner {
+    display: flex;
     width: 100%;
-    height: 973px;
+    height: auto;
     background: #EBEBEB;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
 .list-results {
     display: flex;
-    width: 1110px;
-    height: 139px;
+    width: auto;
+    height: auto;
     justify-content: center;
     align-items: flex-start;
     grid-gap: 30px;
-    margin-left: 165px;
+    margin-top: 90px;
+
 }
 
 .frame-results {
     display: flex;
-    margin-top: 90px;
-    width: 350px;
-    height: 139px;
+    width: auto;
+    height: auto;
     grid-gap: 30px;
     padding-bottom: 1px;
     flex-direction: row;
@@ -356,7 +359,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .results-V1-img {
     display: block;
     width: 160px;
-    height: auto;
+    height: 118px;
     background-image: url(../img/V.1%20Buissnes%20Cards%20v2%2085x55.png);
     background-repeat: no-repeat;
     margin-top: 19px
@@ -364,7 +367,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .results-V2-img {
      display: block;
     width: 160px;
-    height: auto;
+    height: 118px;
     background-image: url(../img/V.2%20Buissnes%20Cards%20v6%2085x55.png);
     background-repeat: no-repeat;
     margin-top: 19px
@@ -372,7 +375,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .results-V3-img {
      display: block;
     width: 160px;
-    height: auto;
+    height: 118px;
     background-image: url(../img/V.3%20Buissnes%20Cards%20v5%2085x55.png);
     background-repeat: no-repeat;
     margin-top: 19px
@@ -408,10 +411,10 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .main-content {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 229px;
-    margin-left: 165px;
+    margin: 90px auto 0;
 
 }
 
@@ -420,13 +423,16 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 564px;
     background-image: url(../img/Folder%20v8%20Open%201.png);
     background-repeat:no-repeat;
+    margin: auto;
 
 }
 
 .main-frame-text {
     display: flex;
-    width: 350px;
+    width: auto;
     flex-direction: column;
+    padding: 0 5px;
+    margin-right: auto;
 }
 
 .main-title {
@@ -465,72 +471,39 @@ input[type="search"]::-webkit-search-results-decoration {
     align-items: center;
 
     width: 100%;
-    height: 645px;
+    height: auto;
 
 }
 
 .details-group {
     display: flex;
     flex-wrap: wrap;
-    width: 1110px;
-    height: 465px;
+    width: 100%;
+    height: auto;
     grid-gap: 29px;
+    margin: 60px auto;
+    justify-content: center;
+
 }
 
 .details-frame {
     display: block;
-
-    width: 23%;
-    height: 465px;
-
-
+    width: 22%;
+    height: auto;
 }
 
 .details-img {
     display: flex;
-    position: relative;
-    overflow: hidden;
-
     width: 100%;
     height: 180px;
-    margin-top: 20px;
-    background-color: #EBEBEB;
 }
 
-.img-beige {
+.img-package {
     display: block;
     width: 100%;
     height: 100%;
-    top: 50px;
-    left: 1px;
-    background-image: url(../img/Box%20v2.png);
+    background-image: url(../img/Package_1110.png);
     background-repeat: no-repeat;
-    position: absolute;
-    z-index: 1;
-}
-
-.img-white {
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 22px;
-    left: 50px;
-    background-image: url(../img/Light%202.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index: 2;
-}
-
-.img-black {
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 51px;
-    left: 72px;
-    background-image: url(../img/YOUR%20DESIGN%20HERE.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index: 1;
 }
 
 .details-title {
@@ -541,6 +514,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    white-space: nowrap;
 }
 
 .circulation {
@@ -554,13 +528,15 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .details-text {
+    height: 155px;
     margin-top: 8px;
-
-   color: #85859B;
+    color: #85859B;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 170%
+    line-height: 170%;
+    overflow: scroll;
+
 }
 
 .btn {
@@ -618,11 +594,9 @@ input[type="search"]::-webkit-search-results-decoration {
     display: block;
     width: 100%;
     height: 100%;
-    top: 12px;
-    left: 14px;
-    background-image: url(../img/Paper%20Bag%20v9.png);
+    background-image: url(../img/Paper%20Bag%201110.png);
     background-repeat: no-repeat;
-    position: absolute;
+
 
 }
 
@@ -630,35 +604,18 @@ input[type="search"]::-webkit-search-results-decoration {
     display: block;
     width: 100%;
     height: 100%;
-    top: 11px;
-    left: 15px;
-    background-image: url(../img/Briefcase%20v1%201.png);
+    background-image: url(../img/Briefcase%201110.png);
     background-repeat: no-repeat;
-    position: absolute;
-
 }
 
-.img-FolderElastic {
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 20px;
-    left: 0px;
-    background-image: url(../img/Folder%20with%20Rubber%20Band%20v2%201.png);
-    background-repeat: no-repeat;
-    position: absolute;
-
-}
 
 .img-BoxV7 {
     display: block;
     width: 100%;
     height: 100%;
-    top: 4px;
-    left: 95px;
-    background-image: url(../img/Box%20v7%201.png);
+    background-image: url(../img/Box%201110.png);
     background-repeat: no-repeat;
-    position: absolute;
+
 }
 
 
@@ -679,55 +636,48 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .brands-frame {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     grid-gap: 30px;
-    width: auto;
+    width: 100%;
     height: 135px;
 
 }
 
-.brands-logo {
-    display: flex;
-    justify-content: center;
-    width: 255px;
-    height: 100%;
-    border: 1px solid #C4C4C4;
-}
 
 .img-hahnemuhle {
-    display: block;
-    margin-top: 34px;
-    width: 197px;
-    height: 55px;
-    background-image: url(../img/brands/hahnemuehle-logo-vector%201.png);
+    width: 255px;
+    height: 100%;
+    background-image: url(../img/Hahnemuhle%201110.png);
     background-repeat: no-repeat;
+    background-position: center;
+    border: solid 2px #c4c4c4;
 }
 
 .img-canson {
-    display: block;
-    margin-top: 41px;
-    width: 186px;
-    height: 53px;
-    background-image: url(../img/brands/Canson.png);
+    width: 255px;
+    height: 100%;
+    background-image: url(../img/Canson%201110.png);
     background-repeat: no-repeat;
+    background-position: center;
+    border: solid 2px #c4c4c4;
 }
 
 .img-RoyalTalens {
-    display: block;
-    margin-top: 57px;
-    width: 225px;
-    height: 21px;
-    background-image: url(../img/brands/royal-talens-bv-logo-vector%201.png);
+    width: 255px;
+    height: 100%;
+    background-image: url(../img/Royal_Talens%201110.png);
     background-repeat: no-repeat;
+    background-position: center;
+    border: solid 2px #c4c4c4;
 }
 
 .img-fabriano {
-    display: block;
-    margin-top: 54px;
-    width: 209px;
-    height: 26px;
-    background-image: url(../img/brands/Fabriano.png);
+    width: 255px;
+    height: 100%;
+    background-image: url(../img/Fabriano%201110.png);
     background-repeat: no-repeat;
+    background-position: center;
+    border: solid 2px #c4c4c4;
 }
 
 /* Promo
@@ -738,10 +688,10 @@ input[type="search"]::-webkit-search-results-decoration {
     flex-direction: row;
     width: 100%;
     height: 500px;
+    justify-content: center;
 }
 
 .promo-content {
-    margin-left: 165px;
     margin-top: 114px;
 }
 
@@ -808,36 +758,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .promo-img {
     display: block;
-    margin-left: 25px;
     width: 730px;
     height: auto;
-    background-image: url(../img/Book%20v4.png);
+    background-image: url(../img/Bock%201110.png);
     background-repeat: no-repeat;
     background-position: bottom center;
-    position: relative;
-}
-
-.promo-img-inner {
-    display: block;
-    position: absolute;
-    width: 371px;
-    height: 392px;
-    background-image: url(../img/Layer%202%201.png);
-    background-repeat: no-repeat;
-    left: 328px;
-    top: 134px;
-}
-
-.promo-img-autograf {
-    display: block;
-    position: absolute;
-    width: 67px;
-    height: 26px;
-    background-image: url(../img/Vector.png);
-    background-repeat: no-repeat;
-    left: 610px;
-    top: 155px;
-
 }
 
 

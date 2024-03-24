@@ -53,203 +53,22 @@
         margin-right: 100px;
     }
 
-
-    /*Catalog*/
-
-    .catalog-content {
-        margin-left: auto;
-    }
-
-    .catalog-img {
-        margin-left: auto;
-        margin-right: 10px;
-    }
-
     /*Main*/
 
-    .main-inner {
-        height: 810px;
-    }
-
-    .list-results {
-        width: 100%;
-        margin-left: auto;
-        height: auto;
-    }
-
     .frame-results {
-        margin: 60px auto 0;
-        width: 220px;
-        height: 219px;
+        width: 300px;
         flex-direction: column;
         grid-gap: 0;
         align-items: center;
     }
 
     .list-results {
-
-
-    }
-    .results-text{
-       margin-top: 0;
-
+        justify-content: space-evenly;
     }
 
-    .results-V1-img, .results-V2-img, .results-V3-img {
-        height: 100%;
-    }
-
-    .main-content {
-        margin: 40px 10px 0;
-
-    }
-
-    .main-img {
-        width: 330px;
-        height: 256px;
-        margin: 0 auto 0;
-        background-image: url(../img/Folder%20v8%20Open%201%20680.png);
-    }
-
-    .main-frame-text {
-       margin: auto;
-        width: 340px;
-    }
-
-    .main-title {
+    .results-text {
         margin-top: 0;
-        font-size: 30px;
-        width: 330px;
     }
-
-    .main-text {
-        width: 330px;
-    }
-
-    /*Details*/
-
-    .details-inner {
-       align-items: baseline;
-
-    }
-
-    .details-group {
-        flex-wrap: nowrap;
-        height: auto;
-    }
-
-    .img-PaperBag {
-        top: 11px;
-        left: 8px;
-    }
-
-    .img-Briefcase {
-        top: 12px;
-    }
-
-    .img-FolderElastic {
-        top: 20px;
-        left: 0px;
-    }
-
-    .img-BoxV7 {
-        top: 4px;
-        left: 80px;
-    }
-
-
-    /*Brands*/
-
-    .brands-inner {
-        height: 200px;
-    }
-
-    .brands-frame {
-        height: auto;
-        width: auto;
-    }
-
-    .brands-frame:first-child {
-        margin-left: 30px;
-    }
-    .brands-frame:last-child {
-        margin-right: 30px;
-    }
-
-    .brands-logo {
-        width: 150px;
-        height: 80px;
-    }
-
-    .img-hahnemuhle {
-        width: 116px;
-        height: 33px;
-        margin-top: 20px;
-        background-image: url(../img/brands/hahnemuehle-logo-vector%201%20680.png);
-    }
-    .img-canson {
-        width: 110px;
-        height: 32px;
-        margin-top: 24px;
-        background-image: url(../img/brands/Canson%20680.png);
-    }
-
-    .img-RoyalTalens {
-        width: 133px;
-        height: 13px;
-        margin-top: 35px;
-        background-image: url(../img/brands/royal-talens-bv-logo-vector%20680.png);
-    }
-
-    .img-fabriano {
-        width: 123px;
-        height: 16px;
-        margin-top: 35px;
-        background-image: url(../img/brands/Fabriano%20680.png);
-    }
-
-
-    /*Promo*/
-
-    .promo-inner {
-        justify-content: space-between;
-    }
-
-    .promo-content{
-        margin: 95px auto 0;
-        padding-left: 5px;
-    }
-
-    .promo-title {
-        width: 210px;
-        height: auto;
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .promo-text {
-        width: 210px;
-        text-align: center;
-    }
-
-    .btn-promo {
-        width: 200px;
-
-    }
-    .promo-img {
-
-    }
-
-    .promo-img-inner {
-
-
-    }
-
-    .promo-img-autograf {
-
-    }
-
-}
 
 /* Media 680============================
 ========================================*/
@@ -296,87 +115,123 @@
     /*Main*/
 
     .frame-results {
-        width: 160px;
-
+        width: 200px;
     }
 
     .main-img {
+        width: 330px;
         margin: 0 auto 0;
+        background-image: url(../img/Folder%20v8%20Open%201%20680.png);
+        background-position: top center;
     }
-    .main-frame-text {
-        width: 340px;
+
+    .main-title {
+        margin-top: 0;
     }
 
     /*Details*/
 
     .details-inner {
-        height: 1048px;
+        height: auto;
     }
 
     .details-group {
         flex-wrap: wrap;
         justify-content: center;
         grid-gap: 0;
+        margin-bottom: 0;
+
     }
 
     .details-frame {
+        display: flex;
         width: 50%;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    .details-img {
+        width: 330px;
+        margin: 0 auto;
+    }
+
+    .img-package {
+        background-image: url(../img/package%20690.png);
+    }
+
+    .img-PaperBag {
+        background-image: url(../img/Paper%20Bag%20680.png);
+    }
+
+    .img-Briefcase {
+        background-image: url(../img/Briefcase%20680.png);
+    }
+
+    .img-BoxV7 {
+        background-image: url(../img/Box%20680.png);
     }
 
     .details-title {
         width: 330px;
-        margin: 20px auto 0;
-
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .details-img, .btn  {
+    .circulation {
         width: 330px;
-        margin: 20px auto 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .circulation, .details-text {
-        width: 329px;
-        margin: 8px auto 0;
+    .details-text {
+        width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        overflow:auto;
     }
 
-    .img-beige {
-        background-image: url(../img/Box%20v2%20680.png);
-        left: 11px;
-    }
-    .img-white {
-        top: 22px;
-        left: 75px;
-    }
-    .img-black {
-        background-image: url(../img/YOUR%20DESIGN%20HERE%20680.png);
-        left: 100px;
-    }
-
-    .img-PaperBag {
-        top: 11px;
-        left: 52px;
-    }
-
-    .img-Briefcase {
-        background-image: url(../img/Briefcase%20v1%201%20680.png);
-        top: 11px;
-        left: 25px;
-    }
-
-    .img-FolderElastic {
-        top: 20px;
-        left: 27px;
-    }
-
-    .img-BoxV7 {
-        top: 4px;
-        left: 120px;
+    .btn {
+        width: 330px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /*Brands*/
+
+    .brands-inner {
+        height: 100%
+    }
+
     .brands-frame {
         grid-gap: 20px;
         width: 100%;
+        height: 100%;
+        margin: 60px auto;
+    }
+
+    .img-hahnemuhle {
+        width: 150px;
+        height: 80px;
+        background-image: url(../img/Hahnemuhle%20680.png);
+    }
+
+    .img-canson {
+        width: 150px;
+        height: 80px;
+        background-image: url(../img/Canson%20680.png);
+    }
+
+    .img-RoyalTalens {
+        width: 150px;
+        height: 80px;
+        background-image: url(../img/Royal_Talens%20680.png);
+    }
+
+    .img-fabriano {
+        width: 150px;
+        height: 80px;
+        background-image: url(../img/Hahnemuhle%20680.png);
     }
 
 
@@ -386,44 +241,15 @@
     }
 
     .promo-content {
-        margin: auto;
-    }
-
-    .promo-title {
-        width: 225px;
-        text-align: start;
-    }
-
-    .promo-text {
-        width: 330px;
-        text-align: start;
-    }
-
-    .btn-promo {
-        width: 255px;
+        margin: 80px auto;
     }
 
     .promo-img {
         width: 369px;
         margin-left: 0;
-
-        background-image: url(../img/Book%20680.png);
+        background-image: url(../img/Bock%20680.png);
         background-position: center right;
     }
-
-    .promo-img-inner {
-
-        width: 166px;
-        height: 241px;
-        background-image: url(../img/Layer%202%201%20680.png);
-        left: 204px;
-        top: 112px;
-    }
-
-    .promo-img-autograf {
-        display: none;
-    }
-
 
 }
 
@@ -502,15 +328,18 @@
     }
 
     .main-content {
+        width: auto;
         flex-direction: column;
+        margin: 40px auto 0 40px;
     }
 
     .main-img {
         margin: 0;
+        height: 255px;
     }
     .main-frame-text {
         margin: 0;
-        width: 510px;
+        width: auto;
         height: auto;
     }
 
@@ -530,11 +359,6 @@
 
 /*Detals*/
 
-    .details-inner {
-        height: auto;
-        margin-bottom: 60px;
-    }
-
     .details-frame {
         height: auto;
     }
@@ -542,6 +366,23 @@
     .details-img {
         width: 240px;
     }
+
+    .img-package {
+        background-image: url(../img/package%20580.png);
+    }
+
+    .img-PaperBag {
+        background-image: url(../img/Paper%20Bag%20510.png);
+    }
+
+    .img-Briefcase {
+        background-image: url(../img/Briefcase%20510.png);
+    }
+
+    .img-BoxV7 {
+        background-image: url(../img/Box%20510.png);
+    }
+
 
     .details-title {
         width: 240px;
@@ -575,46 +416,35 @@
 
     .brands-frame {
         width: 510px;
-        margin: 60px 0;
         flex-wrap: wrap;
         grid-gap: 30px;
     }
-    .brands-frame:last-child {
-        margin-right: auto;
-    }
 
-    .brands-frame:first-child {
-        margin-left: auto;
-    }
     .brands-logo {
         width: 47%;
         height: 127px;
     }
 
     .img-hahnemuhle {
-        width: 186px;
-        height: 52px;
-        margin-top: 30px;
+        width: 240px;
+        height: 127px;
         background-image: url(../img/brands/hahnemuehle-logo-vector%20510.png);
     }
     .img-canson {
-        width: 176px;
-        height: 50px;
-        margin-top: 34px;
+        width: 240px;
+        height: 127px;
         background-image: url(../img/brands/Canson%20510.png);
     }
 
     .img-RoyalTalens {
-        width: 213px;
-        height: 20px;
-        margin-top: 52px;
+        width: 240px;
+        height: 127px;
         background-image: url(../img/brands/royal-talens-bv-logo-vector%20510.png);
     }
 
     .img-fabriano {
-        width: 198px;
-        height: 25px;
-        margin-top: 50px;
+        width: 240px;
+        height: 127px;
         background-image: url(../img/brands/Fabriano%20510.png);
     }
 
@@ -650,25 +480,7 @@
         margin: 20px auto 0;
         background-position: center;
         order: 1;
-        background-image: url(../img/Book%20510.png);
-    }
-
-    .promo-img-inner {
-        width: 228px;
-        height: 240px;
-        left: 203px;
-        top: 55px;
-        background-image: url(../img/Layer%202%201%20510.png);
-    }
-
-    .promo-img-autograf {
-        width: 42px;
-        height: 16px;
-        display: block;
-        right: 30px;
-        top: 63px;
-        left: auto;
-        background-image: url(../img/Vector510.png);
+        background-image: url(../img/Bock%20510.png);
     }
 
     .btn-promo {
@@ -793,6 +605,7 @@
 
     .list-results {
         flex-direction: column;
+        align-items: center;
     }
 
     .frame-results {
@@ -825,25 +638,27 @@
         width: 130px;
         font-size: 14px;
     }
-
+    .main-content {
+        margin: 60px 0 0;
+    }
     .results-text {
         width: 130px;
     }
 
     .main-img {
+        width: 100%;
         background-image: url(../img/Folder%20v8%20Open%201%20320.png);
     }
 
+    .main-frame-text {
+        align-items: center;
+    }
     .main-text {
         width: 290px;
     }
 
 
     /*Details*/
-
-    .details-group {
-        grid-gap: 60px;
-    }
 
     .details-frame {
         width: 100%;
@@ -853,34 +668,21 @@
         width: 290px;
     }
 
-    .img-beige {
-        left: 0;
-    }
-
-    .img-white {
-       left: 62px;
-    }
-
-    .img-black {
-        left: 80px;
+    .img-package {
+        background-image: url(../img/package%20320.png);
     }
 
     .img-PaperBag {
-        left: 34px;
+        background-image: url(../img/Paper%20Bag%20320.png);
     }
 
     .img-Briefcase {
-        left: 5px;
-    }
-
-    .img-FolderElastic {
-        left: 20px;
+        background-image: url(../img/Briefcase%20320.png);
     }
 
     .img-BoxV7 {
-        left: 110px;
+        background-image: url(../img/Box%20320.png);
     }
-
 
     .details-text {
         width: 290px;
@@ -912,32 +714,28 @@
     }
 
     .img-hahnemuhle {
-        width: 116px;
-        height: 33px;
-        margin-top: 20px;
-        background-image: url(../img/brands/hahnemuehle-logo-vector%201%20680.png);
+        width: 150px;
+        height: 80px;
+        background-image: url(../img/Hahnemuhle%20680.png);
     }
+
     .img-canson {
-        width: 110px;
-        height: 32px;
-        margin-top: 24px;
-        background-image: url(../img/brands/Canson%20680.png);
+        width: 150px;
+        height: 80px;
+        background-image: url(../img/Canson%20680.png);
     }
 
     .img-RoyalTalens {
-        width: 133px;
-        height: 13px;
-        margin-top: 35px;
-        background-image: url(../img/brands/royal-talens-bv-logo-vector%20680.png);
+        width: 150px;
+        height: 80px;
+        background-image: url(../img/Royal_Talens%20680.png);
     }
 
     .img-fabriano {
-        width: 123px;
-        height: 16px;
-        margin-top: 35px;
-        background-image: url(../img/brands/Fabriano%20680.png);
+        width: 150px;
+        height: 80px;
+        background-image: url(../img/Hahnemuhle%20680.png);
     }
-
 
     /*Promo*/
 
@@ -959,23 +757,7 @@
         width: 290px;
         height: 281px;
         margin: 0;
-        background-image: url(../img/Book%20v4%20320.png);
-    }
-
-    .promo-img-inner {
-        width: 148px;
-        height: 148px;
-        background-image: url(../img/Layer%202%201%20320.png);
-        left: 130px;
-        top: 49px;
-    }
-
-    .promo-img-autograf {
-        width: 27px;
-        height: 11px;
-        background-image: url(../img/Vector%20320.png);
-        right: 20px;
-        top: 55px;
+        background-image: url(../img/Bock%20320.png);
     }
 
     .btn-promo {
