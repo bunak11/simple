@@ -156,6 +156,7 @@ header {
     width: 24px;
     height: 24px;
     background-image: url(../img/search/search.png);
+    background-repeat: no-repeat;
     cursor: pointer;
     margin-right: 26px;
 }
@@ -202,6 +203,7 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 16px;
     height: 16px;
     background-image:url(../img/search/escape.png);
+    background-repeat: no-repeat;
     background-color: transparent;
     right: 3px;
     top: 4px;
@@ -508,7 +510,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .details-title {
     margin-top: 20px;
-
     color: #666;
     font-size: 30px;
     font-style: normal;
